@@ -33,6 +33,16 @@
                 <stringValue>Test</stringValue>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>account.IsDeleted</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>CreateOppppss</targetReference>
+        </connector>
     </assignments>
     <interviewLabel>Flow #2 Error {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Flow #2 Error</label>
@@ -64,6 +74,23 @@
             <targetReference>Test222233333</targetReference>
         </connector>
         <inputReference>account</inputReference>
+    </recordCreates>
+    <recordCreates>
+        <name>CreateOppppss</name>
+        <label>CreateOppppss</label>
+        <locationX>176</locationX>
+        <locationY>458</locationY>
+        <inputAssignments>
+            <field>CloseDate</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>StageName</field>
+        </inputAssignments>
+        <object>Opportunity</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <start>
         <locationX>50</locationX>
